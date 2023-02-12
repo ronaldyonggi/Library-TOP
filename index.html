@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script type="module" src="./scripts/testing.js"></script>
   <title>Library</title>
 </head>
 <body>
-  <form action="/" method="post" onsubmit="event.preventDefault();">
+  <form id="add-book-form" class="hidden" action="/" method="post" onsubmit="event.preventDefault();" >
     <fieldset>
       <legend>Add a New Book</legend>
       <ul>
@@ -42,5 +43,14 @@
       </ul>
     </fieldset>
   </form>
+
+  <button id="display-button">Display books</button>
+  <button id="new-book-button">New Book</button>
+
+  <div id="container">
+    <div id="cardsContainer">
+
+    </div>
+  </div>
 </body>
 </html>
